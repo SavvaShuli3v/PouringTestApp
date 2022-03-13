@@ -14,11 +14,40 @@
 		4DFD684E27DBE21C002D0A73 /* UIVIew + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD684D27DBE21C002D0A73 /* UIVIew + Extension.swift */; };
 		4DFD685027DBE32A002D0A73 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD684F27DBE32A002D0A73 /* BackView.swift */; };
 		4DFD685227DCD3CB002D0A73 /* BackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD685127DCD3CB002D0A73 /* BackContentView.swift */; };
-		4DFD685527DCD6EE002D0A73 /* PouringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD685427DCD6EE002D0A73 /* PouringButton.swift */; };
-		4DFD685727DCE51A002D0A73 /* PouringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD685627DCE51A002D0A73 /* PouringModel.swift */; };
-		4DFD685927DCE6B8002D0A73 /* PouringContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD685827DCE6B8002D0A73 /* PouringContentView.swift */; };
-		4DFD685B27DCEA98002D0A73 /* PouringTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD685A27DCEA98002D0A73 /* PouringTopView.swift */; };
+		4DFD686527DE8665002D0A73 /* PouringKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD686427DE8665002D0A73 /* PouringKit.docc */; };
+		4DFD686627DE8665002D0A73 /* PouringKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFD686327DE8665002D0A73 /* PouringKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DFD686927DE8665002D0A73 /* PouringKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFD686127DE8665002D0A73 /* PouringKit.framework */; };
+		4DFD686A27DE8665002D0A73 /* PouringKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFD686127DE8665002D0A73 /* PouringKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DFD687127DE8682002D0A73 /* PouringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD687027DE8682002D0A73 /* PouringButton.swift */; };
+		4DFD687327DE8690002D0A73 /* PouringTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD687227DE8690002D0A73 /* PouringTopView.swift */; };
+		4DFD687527DE8699002D0A73 /* PouringContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD687427DE8699002D0A73 /* PouringContentView.swift */; };
+		4DFD687727DE86A0002D0A73 /* PouringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD687627DE86A0002D0A73 /* PouringModel.swift */; };
+		4DFD687A27DE871F002D0A73 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD687927DE871F002D0A73 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DFD686727DE8665002D0A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DFD682B27DBE099002D0A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DFD686027DE8665002D0A73;
+			remoteInfo = PouringKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DFD686B27DE8665002D0A73 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DFD686A27DE8665002D0A73 /* PouringKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DFD683327DBE099002D0A73 /* PouringAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PouringAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,14 +59,26 @@
 		4DFD684D27DBE21C002D0A73 /* UIVIew + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew + Extension.swift"; sourceTree = "<group>"; };
 		4DFD684F27DBE32A002D0A73 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		4DFD685127DCD3CB002D0A73 /* BackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackContentView.swift; sourceTree = "<group>"; };
-		4DFD685427DCD6EE002D0A73 /* PouringButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringButton.swift; sourceTree = "<group>"; };
-		4DFD685627DCE51A002D0A73 /* PouringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringModel.swift; sourceTree = "<group>"; };
-		4DFD685827DCE6B8002D0A73 /* PouringContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringContentView.swift; sourceTree = "<group>"; };
-		4DFD685A27DCEA98002D0A73 /* PouringTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringTopView.swift; sourceTree = "<group>"; };
+		4DFD686127DE8665002D0A73 /* PouringKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PouringKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFD686327DE8665002D0A73 /* PouringKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PouringKit.h; sourceTree = "<group>"; };
+		4DFD686427DE8665002D0A73 /* PouringKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PouringKit.docc; sourceTree = "<group>"; };
+		4DFD687027DE8682002D0A73 /* PouringButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringButton.swift; sourceTree = "<group>"; };
+		4DFD687227DE8690002D0A73 /* PouringTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringTopView.swift; sourceTree = "<group>"; };
+		4DFD687427DE8699002D0A73 /* PouringContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringContentView.swift; sourceTree = "<group>"; };
+		4DFD687627DE86A0002D0A73 /* PouringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouringModel.swift; sourceTree = "<group>"; };
+		4DFD687927DE871F002D0A73 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4DFD683027DBE099002D0A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFD686927DE8665002D0A73 /* PouringKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFD685E27DE8665002D0A73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4DFD683527DBE099002D0A73 /* PouringAppTest */,
+				4DFD686227DE8665002D0A73 /* PouringKit */,
 				4DFD683427DBE099002D0A73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				4DFD683327DBE099002D0A73 /* PouringAppTest.app */,
+				4DFD686127DE8665002D0A73 /* PouringKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,7 +111,6 @@
 			children = (
 				4DFD683627DBE099002D0A73 /* AppDelegate.swift */,
 				4DFD684A27DBE0EA002D0A73 /* TestViewController.swift */,
-				4DFD685327DCD6DC002D0A73 /* PouringButton */,
 				4DFD684C27DBE206002D0A73 /* Helpers */,
 				4DFD683F27DBE09A002D0A73 /* Assets.xcassets */,
 				4DFD684127DBE09A002D0A73 /* LaunchScreen.storyboard */,
@@ -87,18 +129,48 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		4DFD685327DCD6DC002D0A73 /* PouringButton */ = {
+		4DFD686227DE8665002D0A73 /* PouringKit */ = {
 			isa = PBXGroup;
 			children = (
-				4DFD685427DCD6EE002D0A73 /* PouringButton.swift */,
-				4DFD685A27DCEA98002D0A73 /* PouringTopView.swift */,
-				4DFD685827DCE6B8002D0A73 /* PouringContentView.swift */,
-				4DFD685627DCE51A002D0A73 /* PouringModel.swift */,
+				4DFD686F27DE866F002D0A73 /* PouringButton */,
+				4DFD687827DE870B002D0A73 /* Helpers */,
+				4DFD686327DE8665002D0A73 /* PouringKit.h */,
+				4DFD686427DE8665002D0A73 /* PouringKit.docc */,
+			);
+			path = PouringKit;
+			sourceTree = "<group>";
+		};
+		4DFD686F27DE866F002D0A73 /* PouringButton */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD687027DE8682002D0A73 /* PouringButton.swift */,
+				4DFD687227DE8690002D0A73 /* PouringTopView.swift */,
+				4DFD687427DE8699002D0A73 /* PouringContentView.swift */,
+				4DFD687627DE86A0002D0A73 /* PouringModel.swift */,
 			);
 			path = PouringButton;
 			sourceTree = "<group>";
 		};
+		4DFD687827DE870B002D0A73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD687927DE871F002D0A73 /* UIView + Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DFD685C27DE8665002D0A73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFD686627DE8665002D0A73 /* PouringKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4DFD683227DBE099002D0A73 /* PouringAppTest */ = {
@@ -108,15 +180,35 @@
 				4DFD682F27DBE099002D0A73 /* Sources */,
 				4DFD683027DBE099002D0A73 /* Frameworks */,
 				4DFD683127DBE099002D0A73 /* Resources */,
+				4DFD686B27DE8665002D0A73 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DFD686827DE8665002D0A73 /* PBXTargetDependency */,
 			);
 			name = PouringAppTest;
 			productName = PouringAppTest;
 			productReference = 4DFD683327DBE099002D0A73 /* PouringAppTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4DFD686027DE8665002D0A73 /* PouringKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFD686E27DE8665002D0A73 /* Build configuration list for PBXNativeTarget "PouringKit" */;
+			buildPhases = (
+				4DFD685C27DE8665002D0A73 /* Headers */,
+				4DFD685D27DE8665002D0A73 /* Sources */,
+				4DFD685E27DE8665002D0A73 /* Frameworks */,
+				4DFD685F27DE8665002D0A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PouringKit;
+			productName = PouringKit;
+			productReference = 4DFD686127DE8665002D0A73 /* PouringKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -129,6 +221,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					4DFD683227DBE099002D0A73 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4DFD686027DE8665002D0A73 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -147,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				4DFD683227DBE099002D0A73 /* PouringAppTest */,
+				4DFD686027DE8665002D0A73 /* PouringKit */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +257,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DFD685F27DE8665002D0A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,19 +271,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFD685527DCD6EE002D0A73 /* PouringButton.swift in Sources */,
 				4DFD684B27DBE0EA002D0A73 /* TestViewController.swift in Sources */,
-				4DFD685B27DCEA98002D0A73 /* PouringTopView.swift in Sources */,
-				4DFD685727DCE51A002D0A73 /* PouringModel.swift in Sources */,
 				4DFD685027DBE32A002D0A73 /* BackView.swift in Sources */,
 				4DFD684E27DBE21C002D0A73 /* UIVIew + Extension.swift in Sources */,
-				4DFD685927DCE6B8002D0A73 /* PouringContentView.swift in Sources */,
 				4DFD685227DCD3CB002D0A73 /* BackContentView.swift in Sources */,
 				4DFD683727DBE099002D0A73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DFD685D27DE8665002D0A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFD687127DE8682002D0A73 /* PouringButton.swift in Sources */,
+				4DFD687527DE8699002D0A73 /* PouringContentView.swift in Sources */,
+				4DFD687A27DE871F002D0A73 /* UIView + Extension.swift in Sources */,
+				4DFD687727DE86A0002D0A73 /* PouringModel.swift in Sources */,
+				4DFD686527DE8665002D0A73 /* PouringKit.docc in Sources */,
+				4DFD687327DE8690002D0A73 /* PouringTopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DFD686827DE8665002D0A73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DFD686027DE8665002D0A73 /* PouringKit */;
+			targetProxy = 4DFD686727DE8665002D0A73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4DFD684127DBE09A002D0A73 /* LaunchScreen.storyboard */ = {
@@ -313,6 +433,7 @@
 		4DFD684827DBE09A002D0A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +462,7 @@
 		4DFD684927DBE09A002D0A73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +488,70 @@
 			};
 			name = Release;
 		};
+		4DFD686C27DE8665002D0A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9HZ2QY6GJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SavvaDeveloper.PouringKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DFD686D27DE8665002D0A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9HZ2QY6GJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SavvaDeveloper.PouringKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +569,15 @@
 			buildConfigurations = (
 				4DFD684827DBE09A002D0A73 /* Debug */,
 				4DFD684927DBE09A002D0A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFD686E27DE8665002D0A73 /* Build configuration list for PBXNativeTarget "PouringKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFD686C27DE8665002D0A73 /* Debug */,
+				4DFD686D27DE8665002D0A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,8 +1,8 @@
 //
 //  PouringContentView.swift
-//  PouringAppTest
+//  PouringKit
 //
-//  Created by Савва Шулятьев on 12.03.2022.
+//  Created by Савва Шулятьев on 13.03.2022.
 //
 
 import UIKit
@@ -59,3 +59,4 @@ private func makeImageView() -> UIImageView {
     imageView.backgroundColor = .clear
     return imageView
 }
+

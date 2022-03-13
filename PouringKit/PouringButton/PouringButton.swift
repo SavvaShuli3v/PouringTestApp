@@ -1,44 +1,44 @@
 //
 //  PouringButton.swift
-//  PouringAppTest
+//  PouringKit
 //
-//  Created by Савва Шулятьев on 12.03.2022.
+//  Created by Савва Шулятьев on 13.03.2022.
 //
 
 import UIKit
 
-final class PouringButton: UIView {
+public final class PouringButton: UIView {
     private lazy var topView = PouringTopView()
     private lazy var contentView = PouringContentView()
     private lazy var topMaskView = UIView()
     
-    private(set) var isActive = false
-    private(set) var pouringState: PouringState = .topLeft
-    var duration = 6.0
+    public private(set) var isActive = false
+    public private(set) var pouringState: PouringState = .topLeft
+    public var duration: Double = 0.9
     
     private var size = CGSize(width: 0, height: 0)
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
         setupMainRecognizer()
         setupTopMaskView()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with model: PouringModel) {
+    public func configure(with model: PouringModel) {
         contentView.configure(with: model)
         topView.configure(with: model)
     }
     
-    func changePouringState(_ state: PouringState) {
+    public func changePouringState(_ state: PouringState) {
         pouringState = state
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         size = bounds.size
         contentView.frame = bounds
@@ -89,7 +89,7 @@ extension PouringButton {
         topView.mask = topMaskView
     }
     
-    func selectStartMaskFrame(pouringState: PouringState) -> CGRect {
+    private func selectStartMaskFrame(pouringState: PouringState) -> CGRect {
         switch pouringState {
         case .topLeft:
             return CGRect(x: -30, y: -15, width: 30, height: 30)
@@ -102,7 +102,7 @@ extension PouringButton {
         }
     }
     
-    func setupMaskFrame(size: CGSize, pouringState: PouringState) -> CGRect {
+    private func setupMaskFrame(size: CGSize, pouringState: PouringState) -> CGRect {
         func selectLargerWidth(size: CGSize) -> CGFloat {
             if size.width > size.height {
                 return size.width
